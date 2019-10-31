@@ -24,6 +24,8 @@ sudo nano /etc/postgresql/12/main/postgresql.conf
 sudo nano /etc/postgresql/12/main/pg_hba.conf
 ```
 *`# IPv4 local connections`* 
+*`host all all 127.0.0.1/32 md5`* 
+*`host all all all md5`* 
 ```
 systemctl status postgresql.service
 systemctl status postgresql@12-main.service
