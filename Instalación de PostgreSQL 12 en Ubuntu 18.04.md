@@ -19,7 +19,7 @@ sudo nano /etc/postgresql/12/main/postgresql.conf
 ```
 |Original|Modificar|
 | ----- | ---- |
-|```listen_addresses = 'localhost'```|```listen_addresses = '*'```
+|```listen_addresses = 'localhost'```|**```listen_addresses = '*'```**
 ```
 sudo nano /etc/postgresql/12/main/pg_hba.conf 
 ```
