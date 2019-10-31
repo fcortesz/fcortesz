@@ -21,6 +21,8 @@ sudo nano /etc/postgresql/12/main/postgresql.conf
 | ----- | ---- |
 |```listen_addresses = 'localhost'```|**```listen_addresses = '*'```**
 ```
+# what IP address(es) to listen on;
+```
 sudo nano /etc/postgresql/12/main/pg_hba.conf 
 ```
 # IPv4 local connections:
