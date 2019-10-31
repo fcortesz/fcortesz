@@ -15,4 +15,3 @@ sudo apt update
 sudo apt -y install gnupg2
 sudo apt install postgis postgresql-12-postgis-2.5
 ``` 
-*`Reiniciar Ubuntu`* 
