@@ -14,13 +14,13 @@ sudo apt update
 ```
 sudo apt -y install postgresql-12 postgresql-client-12
 ```
-```
+```java
 sudo nano /etc/postgresql/12/main/postgresql.conf 
-# what IP address(es) to listen on;
+//# what IP address(es) to listen on;
 ```
-```
+```java
 sudo nano /etc/postgresql/12/main/pg_hba.conf 
-# IPv4 local connections: 
+//# IPv4 local connections: 
 ```
 systemctl status postgresql.service
 systemctl status postgresql@12-main.service
