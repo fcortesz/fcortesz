@@ -1,6 +1,6 @@
 ## Instalación de PostgreSQL 12 en Ubuntu 18.04.md
 
-* `git clone https://github.com/susannalles/MinimalEditions.git`
+* `sudo apt update`
 
 
 
