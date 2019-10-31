@@ -15,6 +15,19 @@ sudo apt update
 sudo apt -y install postgresql-12 postgresql-client-12
 ```
 ```
+sudo nano /etc/postgresql/12/main/postgresql.conf 
+```
+listen_addresses = 'localhost'	    	        # what IP address(es) to listen on;
+listen_addresses = '*'                        # what IP address(es) to listen on;
+
+```
+sudo nano /etc/postgresql/12/main/pg_hba.conf 
+```
+# IPv4 local connections:
+host    all             all             127.0.0.1/32                     md5
+# IPv4 local connections:
+host    all             all             all                              md5
+```
 systemctl status postgresql.service
 systemctl status postgresql@12-main.service
 systemctl is-enabled postgresql
@@ -22,10 +35,8 @@ systemctl is-enabled postgresql
 ```
 sudo su - postgres
 psql -c "alter user postgres with password 'StrongAdminP@ssw0rd'"
-$ psql
+psql
 postgres=# \conninfo
 postgres=# \q
 ```
 
-modificar en archivo /etc/postgresql/12/main/postgresql.conf linea listen_addresses = '*'
-reiniciar Ubuntu
