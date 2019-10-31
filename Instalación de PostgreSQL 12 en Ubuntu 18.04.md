@@ -17,19 +17,20 @@ sudo apt -y install postgresql-12 postgresql-client-12
 ```
 sudo nano /etc/postgresql/12/main/postgresql.conf
 ```
-*what IP address(es) to listen on;*
- 
-
-- [ ]  `sudo nano /etc/postgresql/12/main/pg_hba.conf`
+*what IP address(es) to listen on;* 
+```
+sudo nano /etc/postgresql/12/main/pg_hba.conf
+```
 *IPv4 local connections:* 
----
-- [ ]  `systemctl status postgresql.service`
-- [ ]  `systemctl status postgresql@12-main.service`
-- [ ]  `systemctl is-enabled postgresql`
----
-- [ ]  `sudo su - postgres`
-- [ ]  `psql -c "alter user postgres with password 'StrongAdminP@ssw0rd'"`
-- [ ]  `psql`
-- [ ]  `postgres=# \conninfo`
-- [ ]  `postgres=# \q`
-
+```
+systemctl status postgresql.service
+systemctl status postgresql@12-main.service
+systemctl is-enabled postgresql
+```
+```
+sudo su - postgres
+psql -c "alter user postgres with password 'StrongAdminP@ssw0rd'"
+psql
+postgres=# \conninfo
+postgres=# \q
+```
