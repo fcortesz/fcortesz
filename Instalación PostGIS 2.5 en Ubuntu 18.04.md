@@ -12,5 +12,6 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-
 sudo apt update
 ```
 ```
+sudo apt -y install gnupg2
 sudo apt install postgis postgresql-12-postgis-2.5
 ``` 
