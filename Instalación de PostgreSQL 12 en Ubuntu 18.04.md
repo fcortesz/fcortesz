@@ -1,13 +1,12 @@
 ## Instalación de PostgreSQL 12 en Ubuntu 18.04.md
 
 - [ ] `sudo apt update`
+- [ ] `sudo apt -y install vim bash-completion wget`
+- [ ] `sudo apt -y upgrade`
+- [ ] `sudo reboot`
 
 
 
-`sudo apt update`
-sudo apt -y install vim bash-completion wget
-sudo apt -y upgrade
-sudo reboot
 ```
 ```java
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
