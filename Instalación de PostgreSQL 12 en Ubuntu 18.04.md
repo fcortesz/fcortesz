@@ -17,18 +17,18 @@ sudo apt -y install postgresql-12 postgresql-client-12
 ```
 sudo nano /etc/postgresql/12/main/postgresql.conf 
 ```
-```
-# what IP address(es) to listen on;
-```
+```* # what IP address(es) to listen on; *```
 |Original|Modificar|
 | ----- | ---- |
 |```listen_addresses = 'localhost'```|**```listen_addresses = '*'```**
+```
 sudo nano /etc/postgresql/12/main/pg_hba.conf 
 ```
-# IPv4 local connections:
-host    all             all             127.0.0.1/32                     md5
-# IPv4 local connections:
-host    all             all             all                              md5
+```* # IPv4 local connections: *```
+|Original|Modificar|
+| ----- | ---- |
+|```host all all 127.0.0.1/32 md5```|**```host all all all md5```**
+```
 ```
 systemctl status postgresql.service
 systemctl status postgresql@12-main.service
