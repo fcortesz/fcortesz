@@ -1,26 +1,26 @@
 ## Instalación de PostgreSQL 12 en Ubuntu 18.04.md
 
-```css
+```java
 sudo apt update
 sudo apt -y install vim bash-completion wget
 sudo apt -y upgrade
 sudo reboot
 ```
-```css
+```java
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
 sudo apt update
 ```
-```css
+```java
 sudo apt -y install postgresql-12 postgresql-client-12
 ```
-```css
+```java
 sudo nano /etc/postgresql/12/main/postgresql.conf 
-/*# what IP address(es) to listen on;*/
+//*# what IP address(es) to listen on;*
 ```
-```css
+```java
 sudo nano /etc/postgresql/12/main/pg_hba.conf 
-/*# IPv4 local connections:*/ 
+//*# IPv4 local connections:* 
 ```
 systemctl status postgresql.service
 systemctl status postgresql@12-main.service
