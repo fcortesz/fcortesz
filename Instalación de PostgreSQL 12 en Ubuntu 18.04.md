@@ -17,8 +17,11 @@ sudo apt -y install postgresql-12 postgresql-client-12
 ```
 sudo nano /etc/postgresql/12/main/postgresql.conf 
 ```
-listen_addresses = 'localhost'
-listen_addresses = '*'                        
+|Original|Modificar|
+| ----- | ---- |
+|listen_addresses = 'localhost'|listen_addresses = '*'|
+
+                        
 
 ```
 sudo nano /etc/postgresql/12/main/pg_hba.conf 
