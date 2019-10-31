@@ -34,5 +34,5 @@ systemctl is-enabled postgresql
 ```
 sudo su - postgres
 psql -c "alter user postgres with password 'StrongAdminP@ssw0rd'"
-sudo reboot
 ```
+*`Reiniciar Ubuntu`* 
