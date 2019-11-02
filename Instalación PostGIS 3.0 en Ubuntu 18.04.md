@@ -1,4 +1,4 @@
-## Instalación PostGIS 2.5 en Ubuntu 18.04
+## Instalación PostGIS 3.0 en Ubuntu 18.04
 
 ```
 sudo apt update 
