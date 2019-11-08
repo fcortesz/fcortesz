@@ -79,4 +79,9 @@ sudo nano /etc/systemd/system/tomcat.service
 systemctl status tomcat.service
 systemctl is-enabled tomcat
 ```
+*`Abrir navegador http://[ServerIP_or_domain]:8080`*
+*`Abrir navegador http://[ServerIP_or_domain]:8080/manager`*
+*`Abrir navegador http://[ServerIP_or_domain]:8080/host-manager`*
+
+
 
