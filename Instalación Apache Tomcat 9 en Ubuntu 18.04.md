@@ -30,7 +30,6 @@ sudo nano /opt/tomcat/conf/tomcat-users.xml
 **`<role rolename="admin-gui"/>`**<br/> 
 **`<user username="admin" password="password" roles="manager-gui,admin-gui"/>`**
 ```
-```
 sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
 ```
 *`<Context antiResourceLocking="false" privileged="true" >`*<br/>
