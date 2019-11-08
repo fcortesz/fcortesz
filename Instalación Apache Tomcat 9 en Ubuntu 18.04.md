@@ -39,6 +39,44 @@ sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
 **`-->`**<br/>
 *`  <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.CsrfPreventionFilter\$LruCache(?:\$1)?|java\.util\.(?:Linked)?HashMap"/>`*<br/>
 *`</Context>`*
+```
+sudo nano /opt/tomcat/webapps/manager/META-INF/context.xml
+```
+*`<Context antiResourceLocking="false" privileged="true" >`*<br/>
+**`<!--`**<br/>
+*`  <Valve className="org.apache.catalina.valves.RemoteAddrValve"`*<br/>
+*`         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />`*<br/>
+**`-->`**<br/>
+*`  <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.CsrfPreventionFilter\$LruCache(?:\$1)?|java\.util\.(?:Linked)?HashMap"/>`*<br/>
+*`</Context>`*
+```
+sudo nano /etc/systemd/system/tomcat.service
+```
+**`[Unit]`**<br/>
+**`Description=Tomcat servlet container`**<br/>
+**`After=network.target`**<br/>
+
+**`[Service]`**<br/>
+**`Type=forking`**<br/>
+
+**`User=tomcat`**<br/>
+**`Group=tomcat`**<br/>
+
+**`Environment="JAVA_HOME=/usr/lib/jvm/default-java"`**<br/>
+**`Environment="JAVA_OPTS=-Djava.security.egd=file:///dev/urandom"`**<br/>
+
+**`Environment="CATALINA_BASE=/opt/tomcat"`**<br/>
+**`Environment="CATALINA_HOME=/opt/tomcat"`**<br/>
+**`Environment="CATALINA_PID=/opt/tomcat/temp/tomcat.pid"`**<br/>
+**`Environment="CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC"`**<br/>
+
+**`ExecStart=/opt/tomcat/bin/startup.sh`**<br/>
+**`ExecStop=/opt/tomcat/bin/shutdown.sh`**<br/>
+
+**`[Install]`**<br/>
+**`WantedBy=multi-user.target`**<br/>
+
+
 
 
 
