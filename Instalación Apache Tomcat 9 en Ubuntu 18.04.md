@@ -40,7 +40,6 @@ sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
 **`-->`**<br/>
 *`  <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.CsrfPreventionFilter\$LruCache(?:\$1)?|java\.util\.(?:Linked)?HashMap"/>`*<br/>
 *`</Context>`*
-```
 
 
 
