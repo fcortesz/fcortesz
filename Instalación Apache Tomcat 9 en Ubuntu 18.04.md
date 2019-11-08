@@ -79,10 +79,7 @@ sudo nano /etc/systemd/system/tomcat.service
 sudo systemctl daemon-reload
 sudo systemctl start tomcat
 sudo systemctl status tomcat
-```
-```
-systemctl status tomcat.service
-systemctl is-enabled tomcat
+sudo systemctl enable tomcat
 ```
 *`Abrir navegador`*<br/>
 *`http://[ServerIP_or_domain]:8080`*<br/>
