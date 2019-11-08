@@ -7,6 +7,8 @@ sudo apt-get upgrade -y
 ```
 sudo apt-get install default-jdk -y
 java --version
+```
+```
 sudo apt-get install unzip
 ```
 ```
