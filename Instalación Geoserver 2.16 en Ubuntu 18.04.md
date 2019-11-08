@@ -5,3 +5,4 @@ wget http://sourceforge.net/projects/geoserver/files/GeoServer/2.16.0/geoserver-
 unzip geoserver-2.16.0-war.zip
 mv geoserver.war /opt/tomcat/webapps
 ```
+*`Abrir navegador http://[ServerIP_or_domain]:8080/geoserver`* 
