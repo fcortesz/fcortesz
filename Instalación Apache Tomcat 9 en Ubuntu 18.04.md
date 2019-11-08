@@ -26,9 +26,9 @@ sudo chown -R tomcat:tomcat /opt/tomcat
 sudo nano /opt/tomcat/conf/tomcat-users.xml
 ```
 *`</tomcat-users>`*
-*`<role rolename="manager-gui"/>`*
-*`<role rolename="admin-gui"/>`*
-*`<user username="admin" password="password" roles="manager-gui,admin-gui"/>`*
+**`<role rolename="manager-gui"/>`**
+**`<role rolename="admin-gui"/>`**
+**`<user username="admin" password="password" roles="manager-gui,admin-gui"/>`**
 ```
 
 
