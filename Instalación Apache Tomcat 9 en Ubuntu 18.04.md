@@ -30,6 +30,17 @@ sudo nano /opt/tomcat/conf/tomcat-users.xml
 **`<role rolename="admin-gui"/>`**<br/> 
 **`<user username="admin" password="password" roles="manager-gui,admin-gui"/>`**
 ```
+```
+sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
+```
+*`<Context antiResourceLocking="false" privileged="true" >`*<br/>
+**`<!--`**<br/>
+*`  <Valve className="org.apache.catalina.valves.RemoteAddrValve"`*<br/>
+*`         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />`*<br/>
+**`-->`**<br/>
+*`  <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.CsrfPreventionFilter\$LruCache(?:\$1)?|java\.util\.(?:Linked)?HashMap"/>`*<br/>
+*`</Context>`*
+```
 
 
 
