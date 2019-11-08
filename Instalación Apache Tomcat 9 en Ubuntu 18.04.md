@@ -22,3 +22,14 @@ sudo mv apache-tomcat-9.0.27 /opt/tomcat
 sudo chmod -R 755 /opt/tomcat/
 sudo chown -R tomcat:tomcat /opt/tomcat
 ``` 
+```
+sudo nano /opt/tomcat/conf/tomcat-users.xml
+```
+*`</tomcat-users>
+*`<role rolename="manager-gui"/>
+*`<role rolename="admin-gui"/>
+*`<user username="admin" password="password" roles="manager-gui,admin-gui"/>
+```
+
+
+
