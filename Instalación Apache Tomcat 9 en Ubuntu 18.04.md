@@ -75,7 +75,11 @@ sudo nano /etc/systemd/system/tomcat.service
 
 **`[Install]`**<br/>
 **`WantedBy=multi-user.target`**<br/>
-
+```
+sudo systemctl daemon-reload
+sudo systemctl start tomcat
+sudo systemctl status tomcat
+```
 
 
 
