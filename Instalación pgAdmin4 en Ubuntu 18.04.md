@@ -7,4 +7,4 @@ sudo apt update
 ```
 sudo apt install pgadmin4 pgadmin4-apache2
 ``` 
-*`Abrir navegador http://[ServerIP_or_domain]/pgadmin4.`* 
+*`Abrir navegador http://[ServerIP_or_domain]/pgadmin4`* 
