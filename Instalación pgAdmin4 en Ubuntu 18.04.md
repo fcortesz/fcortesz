@@ -7,4 +7,6 @@ sudo apt update
 ```
 sudo apt install pgadmin4 pgadmin4-apache2
 ``` 
+Durante la instalación se nos requerira de un usuario y contraseña para la administración.
+
 *`Abrir navegador http://[ServerIP_or_domain]/pgadmin4`* 
