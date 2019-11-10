@@ -6,7 +6,7 @@ Objects | Create | Database
 General - Database [name]
 Save
 Tools | Query Tools
-*`Create Extension Postgis;`*
+Create Extension Postgis;
 Execute/Refresh(F5)
 ```
 
