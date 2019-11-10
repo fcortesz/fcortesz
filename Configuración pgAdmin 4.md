@@ -4,6 +4,7 @@ Nos logueamos con el usuario y contraseña proporcionados durante la instalació
 Object | Create | Server
 General - Name [name]
 Connection - Host name/addres [host] - Username [user] - Password [pwd]
+Save
 ```
 
 
