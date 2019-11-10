@@ -1,4 +1,10 @@
-# Otro Tutorial mas para Integrar Visores Geograficos
+# Tutorial para Integrar Visores Geograficos
+Agradezco la visita a esta liga, pongo a su disposición los pasos que he ido siguiendo para la integración de Visores Geograficos, de igual manera les compartire material que he ido recopilando respecto al tema.
+
+Espero sus comentarios y sugerencias a travez de mi correo electronico fcortesz@gmail.com o bien en Twitter @fcortesz.
+
+Saludos.
+
 ---
 - [ ] [Hosting](https://github.com/fcortesz/fcortesz/blob/master/Hosting.md)
 ---
