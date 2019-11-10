@@ -1,3 +1,5 @@
+## Configurar pgAdmin 4
+
 *`Abrir navegador http://[ServerIP_or_domain]/pgadmin4`* </br>
 Iniciar sesion con usuario y contraseña proporcionados durante instalación.
 ```
@@ -6,4 +8,3 @@ General - Name [name]
 Connection - Host name/addres [host] - Username [user] - Password [pwd]
 Save
 ```
-
