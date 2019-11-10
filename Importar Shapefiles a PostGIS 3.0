@@ -6,4 +6,4 @@ Desde linea de comandos linux ejecutar.
 shp2pgsql -s 4326 -W "UTF-8" xxxxx.shp > xxxxx.sql
 psql -d xxxxx -h localhost -U postgres -p5432 -f xxxxx.sql
 ```
-Solicitara contraseña de PostgreSQL 12. 
+Solicitara la contraseña de PostgreSQL 12. 
