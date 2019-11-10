@@ -1,5 +1,5 @@
 *`Abrir navegador http://[ServerIP_or_domain]/pgadmin4`* </br>
-Nos logueamos con el usuario y contraseña proporcionados durante la instalación.
+Iniciar sesion con usuario y contraseña proporcionados durante instalación.
 ```
 Object | Create | Server
 General - Name [name]
