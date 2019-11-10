@@ -1,5 +1,5 @@
 # Tutorial de Integración de Visores Geograficos
-Agradezco la visita a esta liga, pongo a su disposición los pasos que he ido siguiendo para la integración de Visores Geograficos, al igual que material que he ido recopilando del tema.
+Agradezco la visita a este link, pongo a su disposición los pasos que he ido siguiendo para la integración de Visores Geograficos.
 
 Saludos.
 
