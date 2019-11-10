@@ -7,3 +7,4 @@ shp2pgsql -s 4326 -W "UTF-8" xxxxx.shp > xxxxx.sql
 psql -d xxxxx -h localhost -U postgres -p5432 -f xxxxx.sql
 ```
 Solicitara la contraseña de PostgreSQL 12. 
+asdf
