@@ -5,5 +5,6 @@ wget http://sourceforge.net/projects/geoserver/files/GeoServer/2.17.2/geoserver-
 unzip geoserver-2.17.2-war.zip
 mv geoserver.war /opt/tomcat/webapps
 ```
-*`Reiniciar Ubuntu`* 
+*`Reiniciar Ubuntu`*
+
 *`Abrir navegador http://[ServerIP_or_domain]:8080/geoserver`* 
