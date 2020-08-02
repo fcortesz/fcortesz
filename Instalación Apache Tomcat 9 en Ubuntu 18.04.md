@@ -16,9 +16,9 @@ sudo groupadd tomcat
 sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 ``` 
 ```
-wget https://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.27/bin/apache-tomcat-9.0.27.zip
-unzip apache-tomcat-9.0.27.zip
-sudo mv apache-tomcat-9.0.27 /opt/tomcat
+wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.37/bin/apache-tomcat-9.0.37.zip
+unzip apache-tomcat-9.0.37.zip
+sudo mv apache-tomcat-9.0.37 /opt/tomcat
 sudo chmod -R 755 /opt/tomcat/
 sudo chown -R tomcat:tomcat /opt/tomcat
 ``` 
