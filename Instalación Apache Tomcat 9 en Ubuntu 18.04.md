@@ -17,8 +17,8 @@ sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 ``` 
 ```
 wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.41/bin/apache-tomcat-9.0.41.zip
-unzip apache-tomcat-9.0.37.zip
-sudo mv apache-tomcat-9.0.37 /opt/tomcat
+unzip apache-tomcat-9.0.41.zip
+sudo mv apache-tomcat-9.0.41 /opt/tomcat
 sudo chmod -R 755 /opt/tomcat/
 sudo chown -R tomcat:tomcat /opt/tomcat
 ``` 
